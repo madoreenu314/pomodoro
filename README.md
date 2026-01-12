@@ -1,5 +1,5 @@
 # Pomodoro Timer⏲️
-25分を測れるタイマーです。Electron製です。
+25分/5分を測れるデスクトップ用タイマーです。Electron製です。
 
 ## スクリーンショット
 ![Pomodoro Timer Screenshot](screenshot.png)
