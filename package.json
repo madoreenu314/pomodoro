@@ -3,10 +3,20 @@
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder"
   },
   "devDependencies": {
     "electron": "^39.2.7",
+    "electron-builder": "^26.4.0",
     "electron-reload": "^2.0.0-alpha.1"
+  },
+  "build": {
+    "appId": "com.madoreenu.pomodoro",
+    "productName": "Pomodoro Timer",
+    "mac": {
+      "icon": "icon.icns",
+      "target": "dmg"
+    }
   }
 }
