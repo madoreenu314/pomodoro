@@ -34,7 +34,9 @@ function startTimer() {
     if (timeLeft <= 0) {
       alarm.currentTime = 0;
       alarm.play();
-      alert("time's up");
+      alarm.onended = () => {
+        alert("time's up");
+      };
       stopTimer();
     }
   }, 1000);
