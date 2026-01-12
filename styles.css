@@ -1,20 +1,50 @@
 * {
   box-sizing: border-box;
+  font-family: "Jersey 10", sans-serif;
 }
-
 
 body {
   margin: 0;
   width: 100vw;
   height: 100vh;
-
-  background: white;
+  background: rgb(249, 208, 121);
   user-select: none;
   -webkit-app-region: drag;
+  text-align: center;
+  /*display: flex;
+  /*justify-content: center;
+  /*align-items: center;*/
 }
 
 .app {
+  color: white;
   padding: 16px;
+  text-align: center;
+}
+h1{
+    margin: 10px 0px -8px 0px;
+    font-size: 35px;
+}
+.timer{
+    font-size: 130px;
+    margin: 0px 0px 0px 0px;
+}
+button{
+    font-size: 25px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    border-color: white;
+    color: white;
+}
+
+#start{
+    background-color: rgb(144, 203, 144);
+}
+#stop{
+    background-color: rgb(252, 152, 169);
+}
+#reset{
+    background-color: gray;
 }
 
 button,

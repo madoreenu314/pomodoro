@@ -1,9 +1,10 @@
 const { app, BrowserWindow } = require("electron");
+require("electron-reload")(__dirname);
 
 function createWindow() {
   const win = new BrowserWindow({
-    width: 292,
-    height: 430,
+    width: 252,
+    height: 252,
     resizable: false,
     maximizable: false,
     fullscreenable: false,
@@ -15,6 +16,7 @@ function createWindow() {
   });
 
   win.loadFile("index.html");
+  //win.webContents.openDevTools({ mode: "detach" });
 }
 
 app.whenReady().then(createWindow);
