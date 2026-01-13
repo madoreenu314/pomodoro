@@ -26,7 +26,8 @@ function updateTimer() {
 
 function startTimer() {
   if (intervalId !== null) return;
-
+  paused = false;
+  pauseBtn.textContent = "pause";
   intervalId = setInterval(() => {
     timeLeft--;
     updateTimer();
@@ -66,7 +67,7 @@ function startBreak() {
 function togglePause() {
   if (!intervalId && !paused) return;
 
-  if (!paused) { //止まってないなら止める
+  if (!paused) { //止まってないなら押したら止める
     stopTimer();
     paused = true;
     pauseBtn.textContent = "Resume";
